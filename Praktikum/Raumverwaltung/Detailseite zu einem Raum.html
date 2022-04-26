@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailseite zu einem Raum</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="assets/images/logo.png" width="100">
+        <h1>Detailseite zum Raum A.E.01</h1>
+    </header>
+
+    <nav>
+        <a href="Liste der verfügbaren Räume.html">Liste der verfügbaren Räume</a> |
+        <a href="Detailseite zu einem Raum.html">Detailseite zu einem Raum</a> |
+        <a href="Detailseite zur Buchung.html">Detailseite zur Buchung</a> |
+        <a href="Anlegen einer neuen Raumbuchung.html">Anlegen einer neuen Raumbuchung</a> 
+    </nav>
+   
+    <main>
+        <fieldset>
+            <legend>Informationen</legend>
+            <figure>
+                <img src="assets/images/raum1.jpeg" 
+                alt="Foto für Hörsaal" width="500">
+                <figcaption>Hörsaal A.E.01</figcaption>
+            </figure>
+            <ul>
+                <li>A.E.01</li>
+                <li>Hörsaal</li>
+                <li>EF 42</li>
+                <li>300 Plätze</li>
+                <li>
+                    Ausstattungsmerkmale
+                    <ul>
+                        <li>3 Beamer</li>
+                        <li>2 Whiteboards</li>
+                    </ul>
+                </li>
+    
+            </ul>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Liste der Buchungen</legend>
+            <table border="1px">
+                <thead>
+                        <th>BucungsID</th>
+                        <th>Datum</th>
+                        <th>von</th>
+                        <th>bis</th>
+                        <th>Bezeichnung</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Buchung 001</td>
+                        <td>10.10.2010</td>
+                        <td>16:00</td>
+                        <td>18:00</td>
+                        <td><a href="Detailseite zur Buchung.html">Kolloquium</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td>Buchung 002</td>
+                        <td>11.10.2010</td>
+                        <td>08:00</td>
+                        <td>14:00</td>
+                        <td><a href="Detailseite zur Buchung.html">Workshop</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Buchung 003</td>
+                        <td>11.10.2010</td>
+                        <td>15:00</td>
+                        <td>17:00</td>
+                        <td><a href="Detailseite zur Buchung.html">Vorlesung</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </main>
+    
+    <aside>
+        <ol>
+            <li>
+                <ul>
+                    <li>Beamer Kapput</li>
+                    <li>10.10.2010</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, doloremque!</li>
+                </ul>
+            </li>
+
+            <li>
+                <ul>
+                    <li>Aircondition Kapput</li>
+                    <li>11.10.2010</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, doloremque!</li>
+                </ul>
+            </li>
+
+            <li>
+                <ul>
+                    <li>Keine verfügbare Plätze</li>
+                    <li>12.10.2010</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, doloremque!</li>
+                </ul>
+            </li>
+        </ol>
+    </aside>
+    
+    <footer>Raumverwaltung &copy;2022</footer>
+
+
+
+
+
+</body>
+
+</html>

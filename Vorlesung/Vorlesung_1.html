@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vorlesung 1</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <ol>
+        <li>A</li>
+        <li>B</li>
+    </ol>
+    <hr>
+    <dl>
+        <dt>ADNAN NASSAR</dt>
+        <dd>Age: 28 Height:175cm</dd>
+        <dt>Hamoda NASSAR</dt>
+        <dd>Age: 24 Height:175cm</dd>
+        <dd>Scholl: TU Shisha:True</dd>
+    </dl>
+
+    <form>
+        Zahl eingeben:
+        <input type="number" min="10" max="40" value="10"><br>
+        Zahl aus Bereich einstellen:
+        <input type="range" min="1" max="100" step="5"><br>
+        <input type="submit">
+        Bitte Datei auswählen:
+        <input type="file" name="bild" accept="image/*">
+        <input type="color" value="#000000"><br>
+        <select name="browser" multiple>
+            <option value="firefox">Firefox</option>
+            <option value="chrome" selected>Chrome</option>
+            <option value="vivaldi">Vivaldi</option>
+        </select>
+
+        <select name="browsers" size="3" multiple>
+            <option value="firefox">Firefox</option>
+            <option value="chrome">Chrome</option>
+            <option value="vivaldi" selected>Vivaldi</option>
+        </select>
+        <hr>
+        <input type="text" list="List">
+        <datalist id="List">
+            <option value="firefox">
+            <option value="chrome">
+            <option value="vivaldi" selected>
+        </datalist>
+        <hr>
+        <select name="browsers">
+            <optgroup label="Gecko">
+                <option value="firefox">Firefox</option>
+            </optgroup>
+            <optgroup label="Blink">
+                <option value="chrome">Chrome</option>
+                <option value="vivaldi" selected>Vivaldi</option>
+            </optgroup>
+        </select>
+    </form>
+    <hr>
+    <div id="container">
+        <div>Flex-Item 1</div>
+        <div>Flex-Item 2</div>
+        <div>Flex-Item 3</div>
+        <div>Flex-Item 4</div>
+        <div>Flex-Item 5</div>
+        <div>Flex-Item 6</div>
+    </div>
+    <hr>
+    <div id="container2">
+        <div id="flex1">Flex-Item 1</div>
+        <div id="flex2">Flex-Item 2</div>
+        <div id="flex3">Flex-Item 3</div>
+        </div>
+</body>
+<div id="container3">
+    <div>Grid-Item 1</div>
+    <div>Grid-Item 2</div>
+    <div>Grid-Item 3</div>
+    <div>Grid-Item 4</div>
+    <div>Grid-Item 5</div>
+    </div>
+<div id="container4">
+    <div id="header">Kopfbereich</div>
+    <div id="H-nav">Haputnavigation</div>
+    <div id="main">
+        <div id="N-nav">Neben Navigation</div>
+        <div i="haupt">Hauptteil</div>
+        <div id="zusatz">
+            <div>INFO 1 </div>
+            <div>INFO 2 </div>
+            <div>INFO 3 </div>
+        </div>
+    </div>
+    <div id="footer">Fußbereich</div>
+</div>
+<button id="btn">Zeige Datum</button>
+<script src="script.js"></script>
+</html>

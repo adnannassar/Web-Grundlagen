@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anlegen einer neuen Raumbuchung</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+    <header>
+        <img src="assets/images/logo.png" width="100">
+        <h1>Anlegen einer neuen Raumbuchung</h1>
+    </header>
+   
+    <nav>
+        <a href="Liste der verfügbaren Räume.html">Liste der verfügbaren Räume</a> |
+        <a href="Detailseite zu einem Raum.html">Detailseite zu einem Raum</a> |
+        <a href="Detailseite zur Buchung.html">Detailseite zur Buchung</a> |
+        <a href="Anlegen einer neuen Raumbuchung.html">Anlegen einer neuen Raumbuchung</a> 
+    </nav>
+
+    <main>
+    <form method="post">
+    <fieldset>
+        <legend>Neue Buchung einlegen</legend>
+       
+        <fieldset>
+            <legend>Rauminformationen</legend>
+            <label for="raum_number">Raumnummer: </label>
+            <select id="raum_number" name="raum_number">
+                <option value="AE01">AE01</option>
+                <option value="AE02">AE02</option>
+                <option value="AE03">AE03</option>
+            </select>
+            <br> <br>
+            <label for="name">Bezeichnung: </label>
+            <input name="name" id="name" placeholder="Bezeichnung der Buchung">
+        </fieldset>
+        
+
+        <fieldset>
+            <legend>Zeitraum</legend>
+            <label for="date">Datum</label>
+            <input type="date" id="date" name="date">
+            <br> <br>
+            <label for="start">von</label>
+            <input type="time" id="start" name="start">
+            <br> <br>
+            <label for="end">bis</label>
+            <input type="time" id="end" name="end">
+        </fieldset>
+
+        <fieldset>
+            <legend>Zusätzliche Informationen</legend>
+            <label for="person">Buchende Person: </label>
+            <select id="person" name="person">
+                <option value="safouk">Safouk</option>
+                <option value="hiba">Hiba</option>
+                <option value="baraa">Baraa</option>
+            </select>
+            <br> <br>
+            <label for="count"></label>
+            <input type="number" id="count" name="count" placeholder="z.B. 300 Teilnehmer">
+            <br> <br>
+            <label for="description"></label>
+            <textarea cols="80" rows="10" id="description" name="description">
+            </textarea>
+
+        </fieldset>
+        
+    </fieldset>
+    <input type="submit" value="Buchung hinfügen">
+</form>   
+  
+
+
+    </main>
+
+    <aside>
+        <ol>
+            <li>
+                <ul>
+                    <li>Beamer Kapput</li>
+                    <li>10.10.2010</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, doloremque!</li>
+                </ul>
+            </li>
+
+            <li>
+                <ul>
+                    <li>Aircondition Kapput</li>
+                    <li>11.10.2010</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, doloremque!</li>
+                </ul>
+            </li>
+
+            <li>
+                <ul>
+                    <li>Keine verfügbare Plätze</li>
+                    <li>12.10.2010</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, doloremque!</li>
+                </ul>
+            </li>
+        </ol>
+    </aside>
+
+    <footer>Raumverwaltung &copy;2022</footer>
+</body>
+</html>
