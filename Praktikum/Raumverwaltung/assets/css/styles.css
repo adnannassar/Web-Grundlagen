@@ -2,46 +2,118 @@
     font-family: Arial, Helvetica, sans-serif
 }
 
-h1 {
-    color: lightcoral;
-
+input[type="submit"] {
+    border-radius: 0.2rem;
+    background-color: darkcyan;
+    color: white;
+    font-size: 0.8rem
 }
 
-nav a:hover{
-   color: blueviolet;
+fieldset {
+    border-radius: 0.3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 2rem;
 }
 
-nav a{
-    color: black;
-}
-nav a:active{
-    color: lightcoral;
-}
-nav a{
-    text-decoration: none;
+fieldset input[value="Buchung hinfügen"] {
+    width: 11rem;
+    height: 2rem;
+    font-size: 1.2rem;
 }
 
-header {
-    background-color: lightblue;
+/*startet with mailto*/
+a[href ^="mailto"]::after {
+    content: url("../images/mail.png");
+}
+
+legend {
+    color: white;
+    border: 1px solid darkblue;
+    border-radius: 0.2rem;
+    background-color: darkcyan;
+    margin-bottom: 1rem;
+}
+
+#name {
+    width: 10rem;
 }
 
 
-nav {
-    background-color: bisque;
-}
-
-main {
-    background-color: lightgreen
+.required::after {
+    content: "(erforderliche Eingabe)";
+    font-size: 0.7rem;
+    color: gray;
 }
 
 aside {
-    background-color: lightsalmon;
+    color: orangered;
 }
 
-.f-green {
-    background-color: lightseagreen;
+nav a:hover {
+    color: orange;
 }
 
-#f3 {
-    background-color: rebeccapurple;
+nav a {
+    color: black;
+    text-decoration: none;
+    margin-right: 4rem;
+    font-size: 1.2rem;
+}
+
+nav {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    height: 3rem;
+    padding: 1rem;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(30deg, rgba(2, 0, 36, 1) 0%, rgba(237, 198, 201, 1) 36%, rgba(4, 26, 32, 1) 67%, rgba(90, 135, 144, 1) 89%);
+}
+
+table {
+    border: 1px solid gray;
+    padding: 0.5rem;
+}
+
+table thead {
+    font-size: 1.2rem;
+}
+
+table thead th {
+    border: 1px solid gray;
+}
+
+/*فردي*/
+table tbody tr:nth-of-type(odd) {
+    background-color: aquamarine;
+}
+
+/*زوجي*/
+table tbody tr:nth-of-type(even) {
+    background-color: rgba(7, 149, 102, 0.09);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: lightcoral;
+}
+
+#room_name {
+    border-radius: 0.2rem;
+}
+
+#room_name:valid {
+    color: lightseagreen;
+}
+
+#room_name:not(valid) {
+    color: lightcoral;
+}
+
+.f-green{
+    font-size: 2rem;
 }

@@ -17,18 +17,29 @@
     </header>
 
     <nav>
-        <a href="Liste der verfügbaren Räume.html">Liste der verfügbaren Räume</a> |
-        <a href="Detailseite zu einem Raum.html">Detailseite zu einem Raum</a> |
-        <a href="Detailseite zur Buchung.html">Detailseite zur Buchung</a> |
+        <a href="Liste der verfügbaren Räume.html">Liste der verfügbaren Räume</a>
+        <a href="Detailseite zu einem Raum.html">Detailseite zu einem Raum</a>
+        <a href="Detailseite zur Buchung.html">Detailseite zur Buchung</a>
         <a href="Anlegen einer neuen Raumbuchung.html">Anlegen einer neuen Raumbuchung</a> 
     </nav>
     <br>
     <main>
         <fieldset>
             <legend>Raum Suchen</legend>
-            <form method="get" action="#">
-                <label for="room_name">Bezeichnung des Raumes</label>
-                <input id="room_name" name="room_name" placeholder="A.E.02">
+            <form method="get">
+                <label  id="roomno" for="room_name">Bezeichnung des Raumes</label>
+                <input  required
+                        list="room_list" 
+                        id="room_name" 
+                        name="room_name" 
+                        placeholder="A.E.02"
+                        pattern="[A-Z][.][E1-3][.][0-9][0-9]"
+                        max="6">
+                <datalist id="room_list">
+                    <option value="A.E.01"></option>
+                    <option value="A.E.02"></option>
+                    <option value="A.E.03"></option>
+                </datalist>
                 <input type="submit" value="Finden">
             </form>
         </fieldset>
