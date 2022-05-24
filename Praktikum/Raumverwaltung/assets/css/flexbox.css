@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    display: flex;
+}
+
+main {
+    flex-basis: 80%;
+    border: 2px dotted black;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+aside {
+    border: 2px dotted black;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding: 2rem;
+}

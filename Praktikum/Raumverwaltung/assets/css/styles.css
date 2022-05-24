@@ -2,6 +2,16 @@
     font-family: Arial, Helvetica, sans-serif
 }
 
+header {
+    display: flex;
+}
+
+header img {
+
+    align-self: center;
+    margin-right: 2rem;
+}
+
 input[type="submit"] {
     border-radius: 0.2rem;
     background-color: darkcyan;
@@ -70,6 +80,18 @@ nav {
     background: linear-gradient(30deg, rgba(2, 0, 36, 1) 0%, rgba(237, 198, 201, 1) 36%, rgba(4, 26, 32, 1) 67%, rgba(90, 135, 144, 1) 89%);
 }
 
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-container{
+    height: 80vh;
+}
+
+
 table {
     border: 1px solid gray;
     padding: 0.5rem;
@@ -112,8 +134,47 @@ h6 {
 
 #room_name:not(valid) {
     color: lightcoral;
+
 }
 
-.f-green{
+.f-green {
     font-size: 2rem;
+}
+
+.left-border {
+    border-left: 1px solid black;
+}
+
+footer {
+    top: 95%;
+    position: sticky;
+}
+
+.raum-info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.raum-info-container ul {
+    list-style: none;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.raum-info-container ul li {
+    margin: 1rem;
+}
+
+footer {
+    position: inherit;
+    display: flex;
+    top: 92%;
+    width: 99.2%;
+    background: linear-gradient(30deg, rgba(2, 0, 36, 1) 0%, rgba(237, 198, 201, 1) 36%, rgba(4, 26, 32, 1) 67%, rgba(90, 135, 144, 1) 89%);
+    height: 5rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
 }

@@ -7,55 +7,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detailseite zu einem Raum</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/gridlayout.css">
 
 </head>
 
 <body>
     <header>
-        <img src="assets/images/logo.png" width="100">
+        <img src="assets/images/logo.png" width="70px;" height="50px;">
         <h1>Detailseite zum Raum A.E.01</h1>
     </header>
-
     <nav>
-        <a href="Liste der verfügbaren Räume.html">Liste der verfügbaren Räume</a>
-        <a href="Detailseite zu einem Raum.html">Detailseite zu einem Raum</a>
-        <a href="Detailseite zur Buchung.html">Detailseite zur Buchung</a>
-        <a href="Anlegen einer neuen Raumbuchung.html">Anlegen einer neuen Raumbuchung</a> 
+        <ul>
+            <li>
+                <a href="Liste der verfügbaren Räume.html">Liste der verfügbaren Räume</a>
+            </li>
+
+            <li>
+                <a href="Detailseite zu einem Raum.html">Detailseite zu einem Raum</a>
+            </li>
+            <li>
+                <a href="Detailseite zur Buchung.html">Detailseite zur Buchung</a>
+            </li>
+            <li>
+                <a href="Anlegen einer neuen Raumbuchung.html">Anlegen einer neuen Raumbuchung</a>
+            </li>
+
+        </ul>
     </nav>
-   
     <main>
         <fieldset>
             <legend>Informationen</legend>
-            <figure>
-                <img src="assets/images/raum1.jpeg" 
-                alt="Foto für Hörsaal" width="500">
-                <figcaption>Hörsaal A.E.01</figcaption>
-            </figure>
-            <ul>
-                <li>A.E.01</li>
-                <li>Hörsaal</li>
-                <li>EF 42</li>
-                <li>300 Plätze</li>
-                <li>
-                    Ausstattungsmerkmale
-                    <ul>
-                        <li>3 Beamer</li>
-                        <li>2 Whiteboards</li>
-                    </ul>
-                </li>
-    
-            </ul>
+            <div class="raum-info-container">
+                <ul>
+                    <li>A.E.01</li>
+                    <li>Hörsaal</li>
+                    <li>EF 42</li>
+                    <li>300 Plätze</li>
+                    <li>
+                        Ausstattungsmerkmale
+                        <ul>
+                            <li>3 Beamer</li>
+                            <li>2 Whiteboards</li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <figure>
+                    <img src="assets/images/raum1.jpeg" alt="Foto für Hörsaal" width="500">
+                    <figcaption>Hörsaal A.E.01</figcaption>
+                </figure>
+            </div>
+
         </fieldset>
-    
+
         <fieldset>
             <legend>Liste der Buchungen</legend>
             <table>
                 <thead>
-                        <th>BucungsID</th>
-                        <th>Datum</th>
-                        <th>von</th>
-                        <th>bis</th>
-                        <th>Bezeichnung</th>
+                    <th>BucungsID</th>
+                    <th>Datum</th>
+                    <th>von</th>
+                    <th>bis</th>
+                    <th>Bezeichnung</th>
                 </thead>
                 <tbody>
                     <tr>
@@ -85,7 +99,7 @@
             </table>
         </fieldset>
     </main>
-    
+
     <aside>
         <ol>
             <li>
@@ -113,13 +127,8 @@
             </li>
         </ol>
     </aside>
-    
+
     <footer>Raumverwaltung &copy;2022</footer>
-
-
-
-
-
 </body>
 
 </html>
