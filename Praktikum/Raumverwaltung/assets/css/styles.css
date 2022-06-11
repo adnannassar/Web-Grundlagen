@@ -8,7 +8,6 @@ header {
 }
 
 header img {
-
     align-self: center;
     margin-right: 2rem;
 }
@@ -218,4 +217,23 @@ footer {
     font-size: 1.5rem;
     justify-content: center;
     align-items: center;
+}
+
+.rooom-test-container {
+    display: flex;
+}
+
+.rooom-test-container button {
+    height: 1.5rem;
+    margin-left: 1rem;
+    align-self: center;
+    background-color: lightcoral;
+    color: white;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+}
+
+.rooom-test-container button:hover {
+    cursor: pointer;
+    background-color: rgb(239, 32, 32);
 }

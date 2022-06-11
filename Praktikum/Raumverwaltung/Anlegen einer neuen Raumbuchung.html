@@ -12,7 +12,8 @@
 
 <body>
     <header>
-        <img src="assets/images/logo.png" width="70px;"  height= "50px;">        <h1>Anlegen einer neuen Raumbuchung</h1>
+        <img src="assets/images/logo.png" width="70px;" height="50px;">
+        <h1>Anlegen einer neuen Raumbuchung</h1>
     </header>
 
     <nav>
@@ -30,7 +31,7 @@
             <li>
                 <a href="Anlegen einer neuen Raumbuchung.html">Anlegen einer neuen Raumbuchung</a>
             </li>
-            
+
         </ul>
     </nav>
 
@@ -90,14 +91,42 @@
                     <input type="number" id="count" name="count" placeholder="z.B. 300 Teilnehmer">
                     <br> <br>
                     <label id="resdescription" for="description"></label>
-                    <textarea cols="80" rows="10" id="description" maxlength="500" name="description">
-            </textarea>
+                    <span id="counter">0</span> <span> / </span> <span id="number_of_letters">800</span>
+                    <textarea cols="80" rows="10" id="description" maxlength="800" name="description">
+                    </textarea>
 
                 </fieldset>
                 <input type="submit" value="Buchung hinfügen">
             </fieldset>
 
         </form>
+
+        <fieldset>
+            <legend>Verfügbare Räume</legend>
+        </fieldset>
+        <ul>
+
+            <li>
+                <div class="rooom-test-container">
+                    <h3>Raum 1</h3>
+                    <button id="btn_save_room_1" > Veröfetlichen</button>
+                </div>
+            </li>
+            <li>
+
+
+                <div class="rooom-test-container">
+                    <h3>Raum 2</h3>
+                    <button id="btn_save_room_2"> Veröfetlichen</button>
+                </div>
+            </li>
+            <li>
+                <div class="rooom-test-container">
+                    <h3>Raum 3</h3>
+                    <button id="btn_save_room_3"> Veröfetlichen</button>
+                </div>
+            </li>
+        </ul>
 
 
 
@@ -132,7 +161,9 @@
     </aside>
 
     <footer>Raumverwaltung &copy;2022</footer>
-    <script src="../../assets/js/script.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/saveRooms.js"></script>
 </body>
 
 </html>
